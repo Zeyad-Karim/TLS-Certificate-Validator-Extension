@@ -1,0 +1,7 @@
+After opening Google chrome, go to the Extensions -> Manage Extensions.
+
+Enable the Developer mode on the upper right
+
+Press "Load unpacked", and select the folder in which the zip file was unpacked.
+
+and voila
