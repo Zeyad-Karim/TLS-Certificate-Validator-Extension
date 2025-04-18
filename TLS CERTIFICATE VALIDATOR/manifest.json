@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "TLS Validator",
+  "version": "1.0",
+  "description": "Checks the TLS certificate of the current webpage.",
+  "permissions": ["activeTab", "scripting", "tabs", "webRequest", "debugger"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
+
