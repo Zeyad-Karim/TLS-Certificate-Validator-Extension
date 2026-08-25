@@ -1,0 +1,22 @@
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Local archives and build output
+*.zip
+*.rar
+dist/
+build/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*~

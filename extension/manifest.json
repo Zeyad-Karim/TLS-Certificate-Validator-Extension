@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "TLS Certificate Validator",
+  "version": "1.1.0",
+  "description": "Inspect TLS certificate and connection security details for the active HTTPS page.",
+  "permissions": ["activeTab", "debugger"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "TLS Certificate Validator",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
