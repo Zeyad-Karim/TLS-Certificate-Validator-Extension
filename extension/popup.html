@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TLS Certificate Validator</title>
+    <link rel="stylesheet" href="popup.css" />
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div class="brand-mark" aria-hidden="true">
+          <img src="icon.png" alt="" />
+        </div>
+        <div>
+          <p class="eyebrow">Connection inspector</p>
+          <h1>TLS Certificate Validator</h1>
+        </div>
+      </header>
+
+      <section class="intro" aria-labelledby="intro-title">
+        <h2 id="intro-title">Inspect this page's TLS setup</h2>
+        <p>
+          Review certificate identity, validity, Certificate Transparency, and the
+          connection details Chrome exposes for the active HTTPS page.
+        </p>
+      </section>
+
+      <div id="statusPanel" class="status-panel status-panel--idle" role="status" aria-live="polite">
+        <span id="statusIndicator" class="status-indicator" aria-hidden="true"></span>
+        <div>
+          <strong id="statusTitle">Ready to inspect</strong>
+          <span id="statusText">The page will reload once while TLS details are captured.</span>
+        </div>
+      </div>
+
+      <button id="validateBtn" class="primary-button" type="button">
+        <span class="button-icon" aria-hidden="true">⌁</span>
+        <span id="buttonText">Inspect certificate</span>
+      </button>
+
+      <section id="result" class="results" aria-live="polite" hidden></section>
+
+      <footer class="app-footer">
+        <span>Educational security utility</span>
+        <span aria-hidden="true">•</span>
+        <span>Manifest V3</span>
+      </footer>
+    </main>
+  </body>
+</html>
